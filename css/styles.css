@@ -1,0 +1,204 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Fjalla One', sans-serif; }
+
+/* Menu */
+.menu-container {
+  position: fixed;
+  z-index: 100;
+  display: none;
+  margin: 0px auto;
+  left: 0px;
+  right: 0px; }
+  .menu-container:before {
+    content: '';
+    position: fixed;
+    width: calc(100% - 10px);
+    border-radius: 3px;
+    height: 0px;
+    background-color: black;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    transition: height .3s ease-in; }
+  .menu-container:hover button {
+    top: -70px;
+    width: 150px;
+    height: 150px; }
+    .menu-container:hover button img {
+      width: 50px;
+      top: 75px; }
+  .menu-container:hover .links-container a {
+    visibility: visible;
+    opacity: 1;
+    top: 13px; }
+  .menu-container:hover:before {
+    height: 40px; }
+  .menu-container button {
+    position: fixed;
+    top: -10px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    background-color: #555;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    background: url("../images/shatter-dark.png");
+    background-size: 115px 115px;
+    border: 3px solid black;
+    transition: all .2s ease-in; }
+    .menu-container button:focus {
+      outline: 0; }
+    .menu-container button span {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      bottom: 0px;
+      border: 3px solid #215CA1;
+      border-radius: 100%; }
+    .menu-container button img {
+      position: absolute;
+      width: 30px;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      top: 9px;
+      transition: all .2s ease-in; }
+  .menu-container .links-container {
+    text-align: center;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    position: fixed; }
+    .menu-container .links-container a {
+      opacity: 0;
+      font-size: 18px;
+      visibility: hidden;
+      position: relative;
+      padding: 20px;
+      top: 0;
+      color: #5799DA;
+      text-decoration: none;
+      transition: opacity .3s ease-in, top .3s ease-in, color .2s linear;
+      transition-delay: opacity .5s; }
+      .menu-container .links-container a:hover {
+        color: #F7F7F7; }
+    .menu-container .links-container div {
+      width: 200px;
+      display: inline-block; }
+
+/* End Menu */
+.display-page {
+  background: url("../images/gray_wood.png");
+  background-attachment: fixed;
+  color: #5799DA;
+  height: 100vh; }
+  .display-page .links-container {
+    position: absolute;
+    top: 70px;
+    left: 60px; }
+    .display-page .links-container a {
+      display: block;
+      text-decoration: none;
+      color: #5799DA;
+      font-size: 20px;
+      line-height: 45px;
+      text-transform: uppercase;
+      transition: padding-left .2s ease-in-out; }
+      .display-page .links-container a:hover {
+        padding-left: 8px; }
+      .display-page .links-container a:nth-of-type(2) {
+        animation-delay: .2s; }
+      .display-page .links-container a:nth-of-type(3) {
+        animation-delay: .4s; }
+  .display-page .vertical-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    .display-page .vertical-content img {
+      margin: 0 auto;
+      display: block;
+      padding-top: 70px;
+      max-height: 545px;
+      height: 50%; }
+    .display-page .vertical-content .header {
+      text-align: center;
+      font-size: 60px;
+      padding-top: 50px;
+      text-transform: uppercase;
+      flex-grow: 1; }
+    .display-page .vertical-content .header2 {
+      text-align: center;
+      font-size: 40px;
+      padding: 20px 0;
+      flex-grow: 1; }
+
+.content-header {
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 30px; }
+  .content-header span {
+    font-size: 80px; }
+
+.content-header2 {
+  font-size: 25px;
+  padding: 10px 0; }
+
+.content-text {
+  font-size: 18px;
+  line-height: 35px;
+  font-family: 'Open Sans', sans-serif; }
+
+#about {
+  max-width: 991px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 70px; }
+  #about .content-header {
+    color: #5799DA; }
+    #about .content-header span {
+      color: #555; }
+  #about .content-header2 {
+    color: #5799DA; }
+
+#projects {
+  width: 100%;
+  padding-bottom: 70px;
+  background-color: #215CA1; }
+  #projects .content-container {
+    max-width: 991px;
+    width: 100%;
+    margin: 0 auto; }
+    #projects .content-container .content-header {
+      color: #FFF; }
+      #projects .content-container .content-header span {
+        color: #5799DA; }
+    #projects .content-container .content-header2 {
+      color: #FFF; }
+    #projects .content-container .content-text {
+      color: #5799DA; }
+
+#contact {
+  max-width: 991px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 70px; }
+  #contact .content-header {
+    color: #5799DA; }
+    #contact .content-header span {
+      color: #555; }
+  #contact .content-header2 {
+    color: #5799DA; }
+
+/* Animations */
+
+/*# sourceMappingURL=styles.css.map */
