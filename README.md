@@ -1,2 +1,2 @@
-# artiustech
-Artius Technologies Site
+# Artius Technology Site
+This site is still in development.
